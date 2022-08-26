@@ -1,3 +1,11 @@
+<!--
+ * @Author: lifengice lifengice@126.com
+ * @Date: 2022-08-26 14:24:19
+ * @LastEditors: lifengice lifengice@126.com
+ * @LastEditTime: 2022-08-26 15:43:51
+ * @FilePath: /test-vue/src/components/HelloWorld.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -34,7 +42,7 @@ export default {
       fruitName: "",
       fruitEName: "",
       items: [
-        { id: 1, name: "香蕉", ename: "banana" },
+        { id: 1, name: "大蒜", ename: "banana" },
         { id: 2, name: "苹果", ename: "apple" }
       ]
     };
@@ -43,7 +51,7 @@ export default {
   methods: {
     removeme(index) {
       console.log(index);
-      this.items.splice(index, 1);
+      this.items.splice(index,1);
       // console.log(index);
     },
     addFruit() {
