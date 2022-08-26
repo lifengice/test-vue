@@ -42,7 +42,9 @@ export default {
 
   methods: {
     removeme(index) {
-      this.items.splice(index, index + 1);
+      console.log(index);
+      this.items.splice(index, 1);
+      // console.log(index);
     },
     addFruit() {
       if (!this.fruitName || !this.fruitEName) return;
